@@ -1,19 +1,14 @@
-package io.github.joffrey4.grandfarmer.block;
-
+package io.github.joffrey4.grandfarmer.item;
 
 import io.github.joffrey4.grandfarmer.GrandFarmerMod;
-import io.github.joffrey4.grandfarmer.item.ItemModelProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class BlockBase extends Block implements ItemModelProvider {
+public class ItemBase extends Item implements ItemModelProvider {
 
     protected String name;
 
-    public BlockBase(Material material, String name) {
-        super(material);
-
+    public ItemBase(String name) {
         this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
@@ -22,6 +17,12 @@ public class BlockBase extends Block implements ItemModelProvider {
     @Override
     public void registerItemModel(Item item) {
         GrandFarmerMod.proxy.registerItemRenderer(item, 0, name);
+    }
+
+    @Override
+    public ItemBase setCreativeTab(CreativeTabs tab) {
+        super.setCreativeTab(tab);
+        return this;
     }
 
 }

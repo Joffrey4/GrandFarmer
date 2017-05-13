@@ -1,0 +1,9 @@
+# Items
+item.bacon.name=Bacon
+item.cookedBacon.name=Crispy Bacon
+item.cookedFlesh.name=Fermented Flesh
+
+# Blocks
+
+# Creative Tab
+itemGroup.grandfarmer=Grand Farmer

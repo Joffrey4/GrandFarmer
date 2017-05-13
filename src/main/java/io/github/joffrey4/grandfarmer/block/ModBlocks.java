@@ -1,5 +1,6 @@
 package io.github.joffrey4.grandfarmer.block;
 
+import io.github.joffrey4.grandfarmer.item.ItemModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -14,8 +15,8 @@ public class ModBlocks {
         GameRegistry.register(block);
         GameRegistry.register(itemBlock);
 
-        if (block instanceof BlockBase) {
-            ((BlockBase)block).registerItemModel(itemBlock);
+        if (block instanceof ItemModelProvider) {
+            ((ItemModelProvider)block).registerItemModel(itemBlock);
         }
 
         return block;
