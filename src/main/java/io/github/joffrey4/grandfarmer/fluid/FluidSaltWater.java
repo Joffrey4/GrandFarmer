@@ -11,7 +11,7 @@ public class FluidSaltWater extends Fluid {
     public static final FluidSaltWater instance = new FluidSaltWater();
 
     public FluidSaltWater() {
-        super(name, new ResourceLocation("blocks/water_still"), new ResourceLocation("blocks/water_flow"));
+        super(name, new ResourceLocation(modId + ":blocks/water_still"), new ResourceLocation(modId + ":blocks/water_flow"));
     }
 
     @Override

@@ -5,7 +5,7 @@
     "transform": "forge:default-item"
   },
   "variants": {
-    "fluid": [{
+    "saltwater": [{
       "model": "forge:fluid",
       "custom": { "fluid": "saltWater" }
     }]
