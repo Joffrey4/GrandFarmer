@@ -1,6 +1,5 @@
 package io.github.joffrey4.grandfarmer.block;
 
-
 import io.github.joffrey4.grandfarmer.GrandFarmerMod;
 import io.github.joffrey4.grandfarmer.item.ItemModelProvider;
 import net.minecraft.block.Block;
@@ -17,6 +16,7 @@ public class BlockBase extends Block implements ItemModelProvider {
         this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
+        setCreativeTab(GrandFarmerMod.creativeTab);
     }
 
     @Override

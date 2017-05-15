@@ -2,6 +2,7 @@ package io.github.joffrey4.grandfarmer;
 
 import io.github.joffrey4.grandfarmer.block.ModBlocks;
 import io.github.joffrey4.grandfarmer.client.GrandFarmerTab;
+import io.github.joffrey4.grandfarmer.fluid.ModFluids;
 import io.github.joffrey4.grandfarmer.item.ModItems;
 import io.github.joffrey4.grandfarmer.proxy.CommonProxy;
 import io.github.joffrey4.grandfarmer.recipes.ModRecipes;
@@ -29,8 +30,9 @@ public class GrandFarmerMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println(name + " is loading!");
-        ModItems.init();
+        ModFluids.init();
         ModBlocks.init();
+        ModItems.init();
     }
 
     @Mod.EventHandler

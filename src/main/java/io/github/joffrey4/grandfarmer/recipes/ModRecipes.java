@@ -1,6 +1,7 @@
 package io.github.joffrey4.grandfarmer.recipes;
 
 import io.github.joffrey4.grandfarmer.item.ModItems;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -16,6 +17,9 @@ public class ModRecipes {
         // Cooked Flesh (From Rotten Flesh)
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.cookedFlesh), "RR ", "RR ", "S  ", 'R', Items.ROTTEN_FLESH, 'S', Items.SUGAR);
 
+        // Cooked Mushroom (From red and brown Mushroom)
+        GameRegistry.addSmelting(Blocks.BROWN_MUSHROOM, new ItemStack(ModItems.cookedBrownMushroom), 0.3F);
+        GameRegistry.addSmelting(Blocks.RED_MUSHROOM, new ItemStack(ModItems.cookedRedMushroom), 0.3F);
     }
 
 }

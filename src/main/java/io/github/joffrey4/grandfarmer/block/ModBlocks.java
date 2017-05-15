@@ -1,14 +1,19 @@
 package io.github.joffrey4.grandfarmer.block;
 
+import io.github.joffrey4.grandfarmer.fluid.ModFluids;
 import io.github.joffrey4.grandfarmer.item.ItemModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
 
 public class ModBlocks {
 
-    public static void init() {
+    public static BlockSaltWater saltWaterBlock;
 
+    public static void init() {
+        saltWaterBlock = new BlockSaltWater(ModFluids.saltWater);
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

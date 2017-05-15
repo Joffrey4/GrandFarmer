@@ -2,6 +2,8 @@
 item.bacon.name=Bacon
 item.cookedBacon.name=Crispy Bacon
 item.cookedFlesh.name=Fermented Flesh
+item.cookedBrownMushroom.name=Cooked Mushroom
+item.cookedRedMushroom.name=Cooked Mushroom
 
 # Blocks
 
