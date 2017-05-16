@@ -10,9 +10,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 
     public static BlockSaltWater saltWaterBlock;
+    public static BlockClayedDirt clayedDirt;
+    public static BlockSaltedDirt saltedDirt;
 
     public static void init() {
         saltWaterBlock = register(new BlockSaltWater(ModFluids.saltWater));
+        clayedDirt = register(new BlockClayedDirt("clayedDirt"));
+        saltedDirt = register(new BlockSaltedDirt("saltedDirt"));
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

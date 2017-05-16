@@ -5,7 +5,13 @@ item.cookedFlesh.name=Chair Fermentée
 item.cookedBrownMushroom.name=Champignon Cuit
 item.cookedRedMushroom.name=Champignon Cuit
 
+item.clayBall.name=Argile
+item.salt.name=Sel
+
 # Blocks
+
+# Fluid
+tile.saltWaterBlock.name=Eau salée
 
 # Creative Tab
 itemGroup.grandfarmer=Grand Farmer

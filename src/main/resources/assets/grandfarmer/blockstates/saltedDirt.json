@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "down": "blocks/dirt",
+      "up": "grandfarmer:blocks/saltedDirt_top",
+      "north": "grandfarmer:blocks/clayedDirt_side",
+      "south": "grandfarmer:blocks/clayedDirt_side",
+      "west": "grandfarmer:blocks/clayedDirt_side",
+      "east": "grandfarmer:blocks/clayedDirt_side",
+      "particle": "blocks/dirt"
+    }
+  },
+  "variants": {
+    "normal": {
+      "model": "cube_all"
+    },
+    "inventory": {
+      "model": "cube_all"
+    }
+  }
+}

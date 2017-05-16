@@ -5,7 +5,13 @@ item.cookedFlesh.name=Fermented Flesh
 item.cookedBrownMushroom.name=Cooked Mushroom
 item.cookedRedMushroom.name=Cooked Mushroom
 
+item.clayBall.name=Clay
+item.salt.name=Salt
+
 # Blocks
+
+# Fluid
+tile.saltWaterBlock.name=Salt Water
 
 # Creative Tab
 itemGroup.grandfarmer=Grand Farmer

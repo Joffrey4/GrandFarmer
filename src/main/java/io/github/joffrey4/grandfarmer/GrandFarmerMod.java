@@ -2,11 +2,13 @@ package io.github.joffrey4.grandfarmer;
 
 import io.github.joffrey4.grandfarmer.block.ModBlocks;
 import io.github.joffrey4.grandfarmer.client.GrandFarmerTab;
+import io.github.joffrey4.grandfarmer.event.ModEventHandler;
 import io.github.joffrey4.grandfarmer.fluid.ModFluids;
 import io.github.joffrey4.grandfarmer.item.ModFluidItems;
 import io.github.joffrey4.grandfarmer.item.ModItems;
 import io.github.joffrey4.grandfarmer.proxy.CommonProxy;
 import io.github.joffrey4.grandfarmer.recipes.ModRecipes;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -40,6 +42,7 @@ public class GrandFarmerMod {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        MinecraftForge.EVENT_BUS.register(new ModEventHandler());
         ModRecipes.init();
 
     }

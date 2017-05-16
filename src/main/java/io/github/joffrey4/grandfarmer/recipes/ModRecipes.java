@@ -10,9 +10,13 @@ public class ModRecipes {
 
     public static void init() {
 
+        // Implement vanilla's recipes of CLAY, for ModItems.clayBall;
+        GameRegistry.addSmelting(ModItems.clayBall, new ItemStack(Items.BRICK), 0);
+        GameRegistry.addShapedRecipe(new ItemStack(Blocks.CLAY), "CC ", "CC ", 'C', ModItems.clayBall);
+
         // Bacon (From Porkchop)
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bacon, 2, 0), Items.PORKCHOP);
-        GameRegistry.addSmelting(ModItems.bacon, new ItemStack(ModItems.cookedBacon), 0.3f);
+        GameRegistry.addSmelting(ModItems.bacon, new ItemStack(ModItems.cookedBacon), 0.3F);
 
         // Cooked Flesh (From Rotten Flesh)
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.cookedFlesh), "RR ", "RR ", "S  ", 'R', Items.ROTTEN_FLESH, 'S', Items.SUGAR);
