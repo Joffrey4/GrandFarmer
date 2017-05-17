@@ -1,0 +1,32 @@
+{
+  "textures": {
+    "evaporatedSalt": "grandfarmer:blocks/evaporatedSalt",
+    "particle": "blocks/snow"
+  },
+  "elements": [
+    {
+      "from": [0,0,0],
+      "to": [16,4,16],
+      "faces": {
+        "up": {
+          "texture": "#evaporatedSalt"
+        },
+        "down": {
+          "texture": "#evaporatedSalt"
+        },
+        "west": {
+          "texture": "#evaporatedSalt"
+        },
+        "east": {
+          "texture": "#evaporatedSalt"
+        },
+        "north": {
+          "texture": "#evaporatedSalt"
+        },
+        "south": {
+          "texture": "#evaporatedSalt"
+        }
+      }
+    }
+  ]
+}

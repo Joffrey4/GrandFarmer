@@ -54,7 +54,8 @@ public class BlockClayedDirt extends BlockBase {
             if(net.minecraftforge.common.ForgeHooks.onCropsGrowPre(worldIn, blockup, state, true)) {
 
                 if (age >= 1) {
-                    worldIn.setBlockState(pos, ModBlocks.saltedDirt.getDefaultState());
+                    AGE = 0;
+                    worldIn.setBlockState(blockup, ModBlocks.evaporatedSalt.getDefaultState());
                 } else {
                     AGE += 1;
                     net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state, worldIn.getBlockState(pos));

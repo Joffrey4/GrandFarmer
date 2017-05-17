@@ -9,6 +9,8 @@ item.clayBall.name=Clay
 item.salt.name=Salt
 
 # Blocks
+tile.clayedDirt.name=Clayed Dirt
+tile.evaporatedSalt.name=Salt crystals
 
 # Fluid
 tile.saltWaterBlock.name=Salt Water

@@ -9,6 +9,8 @@ item.clayBall.name=Argile
 item.salt.name=Sel
 
 # Blocks
+tile.clayedDirt.name=Terre Argileuse
+tile.evaporatedSalt.name=Cristaux de Sel
 
 # Fluid
 tile.saltWaterBlock.name=Eau salée

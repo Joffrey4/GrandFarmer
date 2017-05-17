@@ -5,15 +5,18 @@ import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
 
+
 import static io.github.joffrey4.grandfarmer.GrandFarmerMod.modId;
 
 public class BlockSaltWater extends BlockFluidClassic {
 
+    private static final AxisAlignedBB COLLISION_BOX = new AxisAlignedBB(0, 0, 0, 1.0, 0.25, 1.0);
     public static String name = "saltWaterBlock";
 
     public BlockSaltWater(Fluid fluid) {
@@ -29,6 +32,13 @@ public class BlockSaltWater extends BlockFluidClassic {
     }
 
     @Override
+    @Deprecated
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return COLLISION_BOX;
+    }
+
+    @Override
     public float getFluidHeightForRender(IBlockAccess world, BlockPos pos)
     {
         IBlockState here = world.getBlockState(pos);
@@ -36,7 +46,7 @@ public class BlockSaltWater extends BlockFluidClassic {
 
         if (here.getBlock() == this)
         {
-                return 0.25F;
+            return 0.25F;
         }
 
         if (here.getBlock() instanceof BlockLiquid)
