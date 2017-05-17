@@ -11,6 +11,7 @@ item.salt.name=Salt
 # Blocks
 tile.clayedDirt.name=Clayed Dirt
 tile.evaporatedSalt.name=Salt crystals
+tile.waterRegulator.name=Water Regulator
 
 # Fluid
 tile.saltWaterBlock.name=Salt Water

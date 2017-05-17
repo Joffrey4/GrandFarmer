@@ -1,0 +1,41 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {
+      "model": "grandfarmer:waterRegulator_close"
+    },
+
+    "inventory": {
+      "model": "grandfarmer:waterRegulator_close",
+      "transform": "forge:default-block"
+    },
+
+    "facing=north,opened=true": {
+      "model": "grandfarmer:waterRegulator_open"
+    },
+    "facing=north,opened=false": {
+      "model": "grandfarmer:waterRegulator_close"
+    },
+
+    "facing=south,opened=true": {
+      "model": "grandfarmer:waterRegulator_open", "y": 180
+    },
+    "facing=south,opened=false": {
+      "model": "grandfarmer:waterRegulator_close", "y": 180
+    },
+
+    "facing=west,opened=true": {
+      "model": "grandfarmer:waterRegulator_open", "y": 270
+    },
+    "facing=west,opened=false": {
+      "model": "grandfarmer:waterRegulator_close", "y": 270
+    },
+
+    "facing=east,opened=true": {
+      "model": "grandfarmer:waterRegulator_open", "y": 90
+    },
+    "facing=east,opened=false": {
+      "model": "grandfarmer:waterRegulator_close", "y": 90
+    }
+  }
+}

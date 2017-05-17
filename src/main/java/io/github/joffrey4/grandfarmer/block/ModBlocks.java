@@ -3,7 +3,6 @@ package io.github.joffrey4.grandfarmer.block;
 import io.github.joffrey4.grandfarmer.fluid.ModFluids;
 import io.github.joffrey4.grandfarmer.item.ItemModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -13,11 +12,13 @@ public class ModBlocks {
     public static BlockSaltWater saltWaterBlock;
     public static BlockClayedDirt clayedDirt;
     public static BlockEvaporatedSalt evaporatedSalt;
+    public static BlockWaterRegulator waterRegulator;
 
     public static void init() {
         saltWaterBlock = register(new BlockSaltWater(ModFluids.saltWater));
         clayedDirt = register(new BlockClayedDirt("clayedDirt"));
         evaporatedSalt = register(new BlockEvaporatedSalt("evaporatedSalt"));
+        waterRegulator = register(new BlockWaterRegulator("waterRegulator"));
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

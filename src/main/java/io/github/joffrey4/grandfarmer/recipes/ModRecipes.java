@@ -1,5 +1,6 @@
 package io.github.joffrey4.grandfarmer.recipes;
 
+import io.github.joffrey4.grandfarmer.block.ModBlocks;
 import io.github.joffrey4.grandfarmer.item.ModItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -13,6 +14,9 @@ public class ModRecipes {
         // Implement vanilla's recipes of CLAY, for ModItems.clayBall;
         GameRegistry.addSmelting(ModItems.clayBall, new ItemStack(Items.BRICK), 0);
         GameRegistry.addShapedRecipe(new ItemStack(Blocks.CLAY), "CC ", "CC ", 'C', ModItems.clayBall);
+
+        // Block Water Regulator
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.waterRegulator), "CRC", "CPC", "CSC", 'C', Blocks.COBBLESTONE, 'R', Items.REDSTONE, 'P', Blocks.STICKY_PISTON, 'S', Blocks.STONE);
 
         // Bacon (From Porkchop)
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bacon, 2, 0), Items.PORKCHOP);

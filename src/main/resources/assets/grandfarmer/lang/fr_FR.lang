@@ -11,6 +11,7 @@ item.salt.name=Sel
 # Blocks
 tile.clayedDirt.name=Terre Argileuse
 tile.evaporatedSalt.name=Cristaux de Sel
+tile.waterRegulator.name=Régulateur d'eau
 
 # Fluid
 tile.saltWaterBlock.name=Eau salée
